@@ -1,0 +1,70 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, ul, ol, dl, dd, td, div, fieldset, legend, input, textarea, option, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+  font-family: "微软雅黑";
+  color: #34495e;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input, img, button {
+  vertical-align: top;
+  border: none;
+  outline: 0;
+}
+
+.top {
+  width: 1180px;
+  height: 25px;
+  margin: 0 auto;
+}
+.top ul {
+  list-style-type: none;
+  float: right;
+}
+.top ul li {
+  float: left;
+  padding-left: 18px;
+  line-height: 24px;
+  color: #9e9e9e;
+  position: relative;
+}
+.top ul li a {
+  color: #9e9e9e;
+  text-align: center;
+}
+.top ul li s {
+  border-right: 1px solid #d4d4d4;
+  margin: 0 8px;
+}
+.top ul li .fa-angle-down {
+  margin-left: 5px;
+}
+.top ul li .fa-heart {
+  margin-right: 5px;
+}
+.top ul li .more_bd {
+  position: absolute;
+  background: #fff;
+  top: 28px;
+  right: 0;
+  z-index: 10;
+  box-shadow: 1px 1px 3px rgba(100, 100, 100, 0.3);
+  opacity: 0;
+}
+.top ul li .more_bd .list {
+  width: 130px;
+  height: 190px;
+  background: url("http://localhost:8080/dev/img/headFoot/guanzhu-bg.jpg") no-repeat 5px 30px;
+}

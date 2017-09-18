@@ -1,0 +1,46 @@
+@import "common";
+$width:1180px;
+.top{
+   width: $width;
+   height: 25px;
+    margin: 0 auto;
+    ul{
+        list-style-type: none;
+        float: right;
+        li{
+            float: left;
+            padding-left: 18px;
+            line-height: 24px;
+            color: #9e9e9e;
+            position: relative;
+            a{
+                color: #9e9e9e;
+                text-align: center;
+            }
+            s{
+                border-right: 1px solid #d4d4d4;
+                margin: 0 8px;
+            }
+            .fa-angle-down{
+                margin-left: 5px;
+            }
+            .fa-heart{
+                margin-right: 5px;
+            }
+            .more_bd{
+                position: absolute;
+                background: #fff;
+                top:28px;
+                right:0 ;
+                z-index: 10;
+                box-shadow: 1px 1px 3px rgba(100,100,100,.3);
+                opacity: 0;
+                .list{
+                   width: 130px;
+                   height: 190px;
+                   background: url("#{$path}/img/headFoot/guanzhu-bg.jpg") no-repeat 5px 30px; 
+                }
+            }
+        }
+    }
+}

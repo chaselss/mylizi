@@ -1,0 +1,48 @@
+.foot {
+  background: #fff;
+  width: 1180px;
+  margin: 0 auto;
+  line-height: 20px;
+  padding: 40px 0;
+  font-size: 10px;
+}
+.foot a {
+  color: black;
+}
+.foot ul {
+  margin-bottom: 10px;
+}
+.foot ul li {
+  line-height: 14px;
+  float: left;
+  border-right: 1px solid #333333;
+  margin-right: 5px;
+  text-align: center;
+  padding: 0 2px;
+}
+.foot p {
+  display: block;
+  line-height: 12px;
+  height: 12px;
+  clear: both;
+  margin: 10px 0;
+}
+.foot .left {
+  float: left;
+}
+.foot .right {
+  float: right;
+  display: table-cell;
+  vertical-align: middle;
+  margin-right: 30px;
+  border-left: 1px solid #34495E;
+  padding-left: 60px;
+}
+.foot .right a {
+  margin-right: 30px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.foot .photo {
+  margin-top: 20px;
+}
