@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>瀑布流照片</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+	<style type="text/css">
+		#box{
+			overflow: hidden;
+		}
+		#box div{
+			float :left;
+			width: 25%;
+		}
+		.container{
+			overflow: hidden;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<div id="box" class="row col-lg-8 col-lg-offset-2">
+				<div id="list1"> </div>
+				<div id="list2"> </div>
+				<div id="list3"> </div>
+				<div id="list4"> </div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/commons.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			var box = document.getElementById("box");
+			requestimg();
+			document.addEventListener("scroll",function () {
+				if (document.body.scrollTop+window.innerHeight==document.body.offsetHeight) {
+					requestimg();
+				}
+			});
+		}
+		function requestimg () {
+			var req = new XMLHttpRequest();
+			req.open("get","http://10.9.164.5:8080/ajaxwork/day1/waterfall.txt?t=8978978",true);
+			req.send();
+			var listele = Array.from(box.children);
+			req.onload = function () {
+				var listimg = JSON.parse(req.response);
+				listimg.forEach(function (item) {
+					var imgele = document.createElement("img");
+					imgele.src = item.src;
+					imgele.style.width = "100%";
+					listele.sort((item1,item2) => item1.offsetHeight - item2.offsetHeight);
+					listele[0].appendChild(imgele);
+				});
+				
+			}
+		}
+	</script>
+</html>
