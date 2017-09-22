@@ -1,9 +1,13 @@
 @import "common";
 $width:1180px;
+#topbox{
+   width: 100%;
+   background: #f0f0f0;
+}
 .top{
    width: $width;
    height: 25px;
-    margin: 0 auto;
+   margin: 0 auto;
     ul{
         list-style-type: none;
         float: right;
@@ -38,7 +42,7 @@ $width:1180px;
                 .list{
                    width: 130px;
                    height: 190px;
-                   background: url("#{$path}/img/headFoot/guanzhu-bg.jpg") no-repeat 5px 30px; 
+                   background: url("../../img/headFoot/guanzhu-bg.jpg") no-repeat 5px 30px; 
                 }
             }
         }

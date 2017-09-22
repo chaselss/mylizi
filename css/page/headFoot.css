@@ -10,6 +10,10 @@ body {
   color: #34495e;
 }
 
+em, i {
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
 }
@@ -22,6 +26,23 @@ input, img, button {
   vertical-align: top;
   border: none;
   outline: 0;
+}
+
+.clear:after {
+  content: "";
+  height: 0px;
+  overflow: hidden;
+  display: block;
+  clear: both;
+}
+
+a, html {
+  color: #34495E;
+}
+
+#topbox {
+  width: 100%;
+  background: #f0f0f0;
 }
 
 .top {
@@ -66,5 +87,5 @@ input, img, button {
 .top ul li .more_bd .list {
   width: 130px;
   height: 190px;
-  background: url("http://localhost:8080/dev/img/headFoot/guanzhu-bg.jpg") no-repeat 5px 30px;
+  background: url("../../img/headFoot/guanzhu-bg.jpg") no-repeat 5px 30px;
 }

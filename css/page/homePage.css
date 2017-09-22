@@ -10,6 +10,10 @@ body {
   color: #34495e;
 }
 
+em, i {
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
 }
@@ -22,6 +26,23 @@ input, img, button {
   vertical-align: top;
   border: none;
   outline: 0;
+}
+
+.clear:after {
+  content: "";
+  height: 0px;
+  overflow: hidden;
+  display: block;
+  clear: both;
+}
+
+a, html {
+  color: #34495E;
+}
+
+#topbox {
+  width: 100%;
+  background: #f0f0f0;
 }
 
 .top {
@@ -66,7 +87,7 @@ input, img, button {
 .top ul li .more_bd .list {
   width: 130px;
   height: 190px;
-  background: url("http://localhost:8080/dev/img/headFoot/guanzhu-bg.jpg") no-repeat 5px 30px;
+  background: url("../../img/headFoot/guanzhu-bg.jpg") no-repeat 5px 30px;
 }
 
 body, h1, h2, h3, h4, h5, h6, ul, ol, dl, dd, td, div, fieldset, legend, input, textarea, option, p {
@@ -78,6 +99,10 @@ body {
   font-size: 12px;
   font-family: "微软雅黑";
   color: #34495e;
+}
+
+em, i {
+  font-style: normal;
 }
 
 a {
@@ -94,6 +119,18 @@ input, img, button {
   outline: 0;
 }
 
+.clear:after {
+  content: "";
+  height: 0px;
+  overflow: hidden;
+  display: block;
+  clear: both;
+}
+
+a, html {
+  color: #34495E;
+}
+
 .foot {
   background: #fff;
   width: 1180px;
@@ -101,11 +138,13 @@ input, img, button {
   line-height: 20px;
   padding: 40px 0;
   font-size: 10px;
+  border-top: 5px solid #FF616F;
 }
 .foot a {
   color: black;
 }
 .foot ul {
+  overflow: hidden;
   margin-bottom: 10px;
 }
 .foot ul li {
@@ -151,11 +190,6 @@ input, img, button {
 body {
   background: #F5F5F5;
   font: 12px/1.5 "Microsoft YaHei",Tahoma,Helvetica,Arial,simsun;
-}
-
-#headFoot {
-  width: 100%;
-  background: #f0f0f0;
 }
 
 .sidebar {
@@ -264,7 +298,7 @@ body {
   overflow: hidden;
   margin: 0 29px;
   height: 54px;
-  background: url("http://localhost:8080/dev/img/homePage/logo08.png") no-repeat;
+  background: url("../../img/homePage/logo08.png") no-repeat;
 }
 .topbox .top .top_center {
   margin-top: 20px;
@@ -647,6 +681,9 @@ body {
   font-size: 18px;
   margin-right: 10px;
 }
+.wrap .recommend .floor .small_title strong a {
+  color: #34495e;
+}
 .wrap .recommend .floor .small_title span a:hover {
   color: #FF616F;
 }
@@ -669,15 +706,18 @@ body {
   background: #fff;
   overflow: hidden;
 }
+.wrap .recommend .floor .small_content li a {
+  display: block;
+}
 .wrap .recommend .floor .small_content li a .imgbox {
-  width: 280px;
+  width: 250px;
   height: 250px;
   padding: 15px 0;
   border-bottom: 1px solid #f0f0f0;
+  margin: 0 auto;
 }
 .wrap .recommend .floor .small_content li a .imgbox img {
   position: absolute;
-  margin: 0 auto;
   width: 250px;
   display: block;
 }

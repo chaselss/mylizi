@@ -4,10 +4,44 @@
 		<meta charset="UTF-8">
 		<title>注册页面</title>
 	</head>
-	
+	<link rel="stylesheet" type="text/css" href="../css/page/register.css"/>
 	<body>
 		<div id="headbox"></div>
+		<div id="main">
+			<div class="boxpic">
+				<img src="../img/register/login-box-bg.jpg"/>
+			</div>
+			<div class="rbox">
+				<div id="registerbox">
+					<h2>
+						<div class="trig">
+							已有账号？
+							<a href="login.html">点击登录</a>
+						</div>
+						注册
+					</h2>
+					<form action="" method="post">
+						<input type="text" name="tel" id="tel" value="" placeholder="手机"/>
+						<input type="password" name="pwd" id="pwd" placeholder="密码"  />
+						<input type="password" name="pwds" id="pwds" placeholder="确认密码"/>
+						<input type="text" name="yanzheng" id="yanzheng" value="" placeholder="短信验证码"/>
+						<button>发送短信验证码</button>
+						<label><input type="checkbox" id="agree"/>我已阅读并接受<a href="">《丽子服务协议》</a></label>
+						<div id="info">
+							<span></span>
+						</div>
+						<input type="submit" class="submit" value="同意协议并注册"/>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="footbox">
+			
+		</div>
+		<div id="bu">
+			
+		</div>
 	</body>
-	<script data-main="../js/page/register" src="../js/require.js" ></script>
+	<script data-main="../js/page/register.js" src="../js/require.js" ></script>
 	
 </html>

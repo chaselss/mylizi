@@ -1,3 +1,4 @@
+$color:#FF616F;
 .foot{
     background: #fff;
     width: 1180px;
@@ -5,10 +6,12 @@
     line-height: 20px;
     padding: 40px 0;
     font-size: 10px;
+    border-top: 5px solid #FF616F;
     a{
         color:black;
     }
     ul{
+        overflow: hidden;
         margin-bottom: 10px;
         li{
             line-height: 14px;

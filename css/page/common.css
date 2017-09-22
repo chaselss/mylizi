@@ -10,6 +10,10 @@ body {
   color: #34495e;
 }
 
+em, i {
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
 }
@@ -22,4 +26,16 @@ input, img, button {
   vertical-align: top;
   border: none;
   outline: 0;
+}
+
+.clear:after {
+  content: "";
+  height: 0px;
+  overflow: hidden;
+  display: block;
+  clear: both;
+}
+
+a, html {
+  color: #34495E;
 }

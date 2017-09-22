@@ -13,10 +13,7 @@ body{
      background: #F5F5F5;
      font: 12px/1.5 "Microsoft YaHei",Tahoma,Helvetica,Arial,simsun;
 }
-#headFoot{
-   width: 100%;
-   background: #f0f0f0;
-}
+
 .sidebar{
     width: 40px;
     position: fixed;
@@ -122,7 +119,7 @@ body{
                 overflow: hidden;
                 margin:0 29px;
                 height: 54px;
-                background: url("#{$path}/img/homePage/logo08.png") no-repeat;
+                background: url("../../img/homePage/logo08.png") no-repeat;
             }
         }
         .top_center{
@@ -534,6 +531,9 @@ body{
               strong{
                   font-size: 18px;
                   margin-right: 10px;
+                  a{
+                     color: #34495e; 
+                  }
               }
               span{
                   a:hover{
@@ -559,14 +559,16 @@ body{
                   background: #fff;
                   overflow: hidden;
                   a{
+                      display: block;
                       .imgbox{
-                         width: 280px;
+                         width: 250px;
                          height: 250px;
+                         
                          padding:15px 0;
                          border-bottom: 1px solid #f0f0f0;
+                         margin:0 auto;
                          img{
                              position: absolute;
-                             margin:0 auto;
                              width: 250px;
                              display: block;
                          }
