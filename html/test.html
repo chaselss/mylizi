@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	<script src="../js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		$.ajax({
+				type:"post",
+				url:"/api/item/commentList",
+				data:{
+					id:"554dae3ee4b0a4e489d1b3d7",
+					type:1,
+					page:2
+				},
+				success: function (data) {
+					console.log(data);
+				}
+				
+			});
+	</script>
+</html>

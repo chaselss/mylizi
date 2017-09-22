@@ -1,0 +1,85 @@
+body {
+  background: #FAFAFA;
+}
+
+#main {
+  width: 1008px;
+  height: 452px;
+  margin: 30px auto 50px;
+}
+#main .boxpic {
+  width: 600px;
+  height: 450px;
+  float: left;
+}
+#main .rbox {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 320px;
+  height: 420px;
+  box-shadow: 0 0 15px rgba(204, 204, 204, 0.5);
+  float: right;
+  padding: 15px 30px;
+}
+#main .rbox #registerbox h2 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+#main .rbox #registerbox h2 .trig {
+  float: right;
+  font-size: 12px;
+  letter-spacing: 0;
+  margin-top: 4px;
+}
+#main .rbox #registerbox h2 .trig a:hover {
+  color: #FF616F;
+}
+#main .rbox #registerbox h2 .trig a {
+  color: #34495E;
+  text-decoration: underline;
+}
+#main .rbox #registerbox form input {
+  display: block;
+  border: 1px solid #ccc;
+  width: 306px;
+  height: 26px;
+  padding: 6px;
+  margin-bottom: 24px;
+}
+#main .rbox #registerbox form .input {
+  overflow: hidden;
+}
+#main .rbox #registerbox form .input a:hover {
+  color: #FF616F;
+}
+#main .rbox #registerbox form .input a {
+  float: right;
+  color: #34495E;
+  text-decoration: underline;
+}
+#main .rbox #registerbox form .submit {
+  width: 320px;
+  height: 67px;
+  background: #FF616F;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  margin-top: 10px;
+}
+
+#info {
+  height: 12px;
+  text-align: center;
+}
+#info span {
+  color: #FF616F;
+}
+
+#footbox {
+  width: 100%;
+  height: 200px;
+  background: #fff;
+  border-top: 5px solid #222;
+}

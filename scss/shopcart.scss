@@ -1,0 +1,286 @@
+@import "common";
+$color:#FF616F;
+$fcolor:#34495E;
+.headbox{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+    .head{
+        width: 1000px;
+        height: 65px;
+        margin: 0 auto;
+        .logo{
+            display: inline-block;
+            width: 238px;
+            height: 42px;
+            padding-top: 20px;
+            a{
+                display: inline-block;
+                float: left;
+                
+            }
+            h2{
+                float: left;
+                display: inline-block;
+                width: 88px;
+                height: 33px;
+                margin: 7px 0 0 10px;
+                font-size: 22px;
+                font-weight: 400;
+            }
+        }
+        .progressbg{
+            float: right;
+            width: 475px;
+            height: 50px;
+            margin-top: 15px;
+            background: url(../../img/shopcart/progress-step.png) no-repeat;
+            .progress{
+                width: 120px;
+                height: 50px;
+                background: url(../../img/shopcart/progress-step.png) no-repeat 0 -65px;
+            }
+        }
+    }
+}
+
+.content{
+    width: 1000px;
+    min-height: 300px;
+    margin: 20px auto 80px;
+    .page{
+        .item_tab{
+            width: 1000px;
+            height: 32px;
+            position: relative;
+            a:hover{
+                color: $color;
+            }
+            a{
+                font-size: 16px;
+                margin: 4px 0 10px 0;
+                padding:0 10px;
+                width: 116px;
+                height: 16px;
+                text-align: center;
+                line-height: 16px;
+                border-right: 1px solid #ccc;
+                display: inline-block;
+                float: left;
+                font-weight: 400;
+            }
+            .tab_line{
+                clear: both;
+                top: 30px;
+                left: 0px;
+                width: 136px;
+                height: 3px;
+                background: $color;
+                position: absolute;
+            }
+        }
+        .newbox{
+            border: 1px solid #eee;
+            
+        }
+        .cart_list{
+            width: 968px;
+            height: 458px;
+            padding: 15px;
+            margin-top: 15px;
+            background: #fff;
+            .check{
+                display: inline-block;
+                margin-right: 10px;
+                height: 16px;
+                width: 16px;
+                background: url(../../img/shopcart/checkbox-ico.png);
+                vertical-align: bottom;
+                float: left;
+            }
+            .ischecked {
+                 background-position: 0 -36px;
+            }
+            .cart_hd{
+                ul{
+                    width: 968px;
+                    height: 18px;
+                    padding-bottom: 12px;
+                    border-bottom: 1px solid #eee;
+                    li{
+                        float: left;
+                        
+                    }
+                }
+            }
+            .shopbox{
+                width: 968px;
+                min-height: 300px;
+                margin-top: 15px;
+                .shop_info{
+                    width: 100%;
+                    height: 21px;
+                    padding: 5px 0;
+                    border-bottom: 1px solid $color;
+                    .shopname{
+                        margin-right: 5px;
+                    }
+                    .contact{
+                        display: inline-block;
+                        height: 16px;
+                        width: 16px;
+                        background: url(../../img/shopcart/shop_service.gif);
+                    }
+                }
+                .shop_list{
+                    width: 966px;
+                    border: 1px solid #ccc;
+                    border-top: 0;
+                    padding-bottom: 20px;
+                    ul{
+                        height: 72px;
+                        border-bottom: 1px solid #eee;
+                        padding: 24px 0 23px;
+                        background: #FAFAFA;
+                        li{
+                            height: 70px;
+                            float: left;
+                            .check{
+                                margin-right: 0;
+                            }
+                            
+                            img{
+                                width: 70px;
+                                height: 70px;
+                                float: left;
+                                border: 1px solid #e0e0e0;
+                            }
+                            .pname{
+                                float: left;
+                                display: inline-block;
+                                width: 180px;
+                                margin-left: 13px;
+                                a:hover{
+                                    color: $color;
+                                    text-decoration: underline;
+                                }
+                            }
+                            .psize{
+                                color: #9C9C9C;
+                            }
+                            .countbox{
+                                i,input{
+                                    float: left;
+                                    display: inline-block;
+                                    height: 24px;
+                                    text-align: center;
+                                }
+                                input{
+                                    border-top: 1px solid #ccc;
+                                    border-bottom: 1px solid #ccc;
+                                    background: #fff;
+                                }
+                                i:hover{
+                                    background: #fff;
+                                }
+                                i{
+                                    width: 26px;
+                                    border: 1px solid #ccc;
+                                    line-height: 24px;
+                                    font-size: 16px;
+                                    font-weight: 100;
+                                }
+                                .fa-plus{
+                                    line-height: 30px;
+                                }
+                                input{
+                                    width: 36px;
+                                }
+                            }
+                            .relaPrice{
+                                font-size: 14px;
+                                color: $color;
+                            }
+                            .btn{
+                                text-align: center;
+                            }
+                        }
+                        .pricebox{
+                            padding-left:10px;
+                            p{
+                                margin-bottom: 8px;
+                            }
+                            .marketprice{
+                                text-decoration: line-through;
+                                color: #9C9C9C;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+                    .accountBox{
+                        padding-left: 19px;
+                        height: 54px;
+                        margin-top: 35px;
+                        border-top: 1px solid #eee;
+                        .accountleft{
+                            width: 204px;
+                            height: 18px;
+                            float: left;
+                            margin-top: 18px;
+                            .check{
+                                display: inline-block;
+                                margin-right: 10px;
+                                height: 16px;
+                                width: 16px;
+                                background: url(../../img/shopcart/checkbox-ico.png);
+                                vertical-align: bottom;
+                                float: left;
+                            }
+                            .ischecked {
+                                 background-position: 0 -36px;
+                            }
+                            i,span{
+                                float: left;
+                            }
+                            .all{
+                                margin-right: 5px;
+                            }
+                            .margin_lr{
+                                margin: 0 25px;
+                                
+                                
+                            }
+                        }
+                        .accountright{
+                            width: 400px;
+                            float: right;
+                            line-height: 40px;
+                            em{
+                                color: $color;
+                            }
+                            .duoshou{
+                                font-size: 20px;
+                            }
+                            .pay{
+                                background: $color;
+                            }
+                            button{
+                                float: right;
+                                width: 160px;
+                                height: 56px;
+                                font-size: 24px;
+                                color: #fff;
+                                background: #DDD;
+                            }
+                        }
+                    }
+    }
+    .empty{
+        display: none;
+        width: 100%;
+        height: 300px;
+        background: url(../../img/shopcart/cart-none-bg.png) center center no-repeat;
+    }
+}

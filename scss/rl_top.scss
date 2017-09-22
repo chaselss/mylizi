@@ -1,0 +1,50 @@
+@import "common";
+.head{
+    width:100%;
+    height: 100%;
+    background: #222;
+    .hd_br{
+        position: relative;
+        width: 826px;
+        height: 57px;
+        margin: 0 auto;
+        padding-left: 182px;
+        a{
+            color:#fff;
+        }
+        .logo{
+            position: absolute;
+            height: 68px;
+            width: 182px;
+            top: 0;
+            left: 0;
+            a{
+                height: 68px;
+                width: 182px;
+                display: inline-block;
+                background: url(../../img/register/loginlogo.png) no-repeat;
+                
+            }
+        }
+        .hd_lbar{
+            float: left;
+            display: inline-block;
+            height: 17px;
+            widows: 48px;
+            padding: 20px 12px;
+            
+            color: #fff;
+        }
+        .hd_rbar{
+            float: right;
+            a{
+                line-height: 57px;
+                margin-right: 12px;
+            }
+            span{
+                color:#fff;
+                line-height: 57px;
+            }
+        }
+    }
+}

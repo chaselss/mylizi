@@ -1,0 +1,313 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, ul, ol, dl, dd, td, div, fieldset, legend, input, textarea, option, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+  font-family: "微软雅黑";
+  color: #34495e;
+}
+
+em, i {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input, img, button {
+  vertical-align: top;
+  border: none;
+  outline: 0;
+}
+
+.clear:after {
+  content: "";
+  height: 0px;
+  overflow: hidden;
+  display: block;
+  clear: both;
+}
+
+a, html {
+  color: #34495E;
+}
+
+.headbox {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #ccc;
+}
+.headbox .head {
+  width: 1000px;
+  height: 65px;
+  margin: 0 auto;
+}
+.headbox .head .logo {
+  display: inline-block;
+  width: 238px;
+  height: 42px;
+  padding-top: 20px;
+}
+.headbox .head .logo a {
+  display: inline-block;
+  float: left;
+}
+.headbox .head .logo h2 {
+  float: left;
+  display: inline-block;
+  width: 88px;
+  height: 33px;
+  margin: 7px 0 0 10px;
+  font-size: 22px;
+  font-weight: 400;
+}
+.headbox .head .progressbg {
+  float: right;
+  width: 475px;
+  height: 50px;
+  margin-top: 15px;
+  background: url(../../img/shopcart/progress-step.png) no-repeat;
+}
+.headbox .head .progressbg .progress {
+  width: 120px;
+  height: 50px;
+  background: url(../../img/shopcart/progress-step.png) no-repeat 0 -65px;
+}
+
+.content {
+  width: 1000px;
+  min-height: 300px;
+  margin: 20px auto 80px;
+}
+.content .page .item_tab {
+  width: 1000px;
+  height: 32px;
+  position: relative;
+}
+.content .page .item_tab a:hover {
+  color: #FF616F;
+}
+.content .page .item_tab a {
+  font-size: 16px;
+  margin: 4px 0 10px 0;
+  padding: 0 10px;
+  width: 116px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+  border-right: 1px solid #ccc;
+  display: inline-block;
+  float: left;
+  font-weight: 400;
+}
+.content .page .item_tab .tab_line {
+  clear: both;
+  top: 30px;
+  left: 0px;
+  width: 136px;
+  height: 3px;
+  background: #FF616F;
+  position: absolute;
+}
+.content .page .newbox {
+  border: 1px solid #eee;
+}
+.content .page .cart_list {
+  width: 968px;
+  height: 458px;
+  padding: 15px;
+  margin-top: 15px;
+  background: #fff;
+}
+.content .page .cart_list .check {
+  display: inline-block;
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+  background: url(../../img/shopcart/checkbox-ico.png);
+  vertical-align: bottom;
+  float: left;
+}
+.content .page .cart_list .ischecked {
+  background-position: 0 -36px;
+}
+.content .page .cart_list .cart_hd ul {
+  width: 968px;
+  height: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+.content .page .cart_list .cart_hd ul li {
+  float: left;
+}
+.content .page .cart_list .shopbox {
+  width: 968px;
+  min-height: 300px;
+  margin-top: 15px;
+}
+.content .page .cart_list .shopbox .shop_info {
+  width: 100%;
+  height: 21px;
+  padding: 5px 0;
+  border-bottom: 1px solid #FF616F;
+}
+.content .page .cart_list .shopbox .shop_info .shopname {
+  margin-right: 5px;
+}
+.content .page .cart_list .shopbox .shop_info .contact {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background: url(../../img/shopcart/shop_service.gif);
+}
+.content .page .cart_list .shopbox .shop_list {
+  width: 966px;
+  border: 1px solid #ccc;
+  border-top: 0;
+  padding-bottom: 20px;
+}
+.content .page .cart_list .shopbox .shop_list ul {
+  height: 72px;
+  border-bottom: 1px solid #eee;
+  padding: 24px 0 23px;
+  background: #FAFAFA;
+}
+.content .page .cart_list .shopbox .shop_list ul li {
+  height: 70px;
+  float: left;
+}
+.content .page .cart_list .shopbox .shop_list ul li .check {
+  margin-right: 0;
+}
+.content .page .cart_list .shopbox .shop_list ul li img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  border: 1px solid #e0e0e0;
+}
+.content .page .cart_list .shopbox .shop_list ul li .pname {
+  float: left;
+  display: inline-block;
+  width: 180px;
+  margin-left: 13px;
+}
+.content .page .cart_list .shopbox .shop_list ul li .pname a:hover {
+  color: #FF616F;
+  text-decoration: underline;
+}
+.content .page .cart_list .shopbox .shop_list ul li .psize {
+  color: #9C9C9C;
+}
+.content .page .cart_list .shopbox .shop_list ul li .countbox i, .content .page .cart_list .shopbox .shop_list ul li .countbox input {
+  float: left;
+  display: inline-block;
+  height: 24px;
+  text-align: center;
+}
+.content .page .cart_list .shopbox .shop_list ul li .countbox input {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+.content .page .cart_list .shopbox .shop_list ul li .countbox i:hover {
+  background: #fff;
+}
+.content .page .cart_list .shopbox .shop_list ul li .countbox i {
+  width: 26px;
+  border: 1px solid #ccc;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 100;
+}
+.content .page .cart_list .shopbox .shop_list ul li .countbox .fa-plus {
+  line-height: 30px;
+}
+.content .page .cart_list .shopbox .shop_list ul li .countbox input {
+  width: 36px;
+}
+.content .page .cart_list .shopbox .shop_list ul li .relaPrice {
+  font-size: 14px;
+  color: #FF616F;
+}
+.content .page .cart_list .shopbox .shop_list ul li .btn {
+  text-align: center;
+}
+.content .page .cart_list .shopbox .shop_list ul .pricebox {
+  padding-left: 10px;
+}
+.content .page .cart_list .shopbox .shop_list ul .pricebox p {
+  margin-bottom: 8px;
+}
+.content .page .cart_list .shopbox .shop_list ul .pricebox .marketprice {
+  text-decoration: line-through;
+  color: #9C9C9C;
+}
+.content .page .accountBox {
+  padding-left: 19px;
+  height: 54px;
+  margin-top: 35px;
+  border-top: 1px solid #eee;
+}
+.content .page .accountBox .accountleft {
+  width: 204px;
+  height: 18px;
+  float: left;
+  margin-top: 18px;
+}
+.content .page .accountBox .accountleft .check {
+  display: inline-block;
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+  background: url(../../img/shopcart/checkbox-ico.png);
+  vertical-align: bottom;
+  float: left;
+}
+.content .page .accountBox .accountleft .ischecked {
+  background-position: 0 -36px;
+}
+.content .page .accountBox .accountleft i, .content .page .accountBox .accountleft span {
+  float: left;
+}
+.content .page .accountBox .accountleft .all {
+  margin-right: 5px;
+}
+.content .page .accountBox .accountleft .margin_lr {
+  margin: 0 25px;
+}
+.content .page .accountBox .accountright {
+  width: 400px;
+  float: right;
+  line-height: 40px;
+}
+.content .page .accountBox .accountright em {
+  color: #FF616F;
+}
+.content .page .accountBox .accountright .duoshou {
+  font-size: 20px;
+}
+.content .page .accountBox .accountright .pay {
+  background: #FF616F;
+}
+.content .page .accountBox .accountright button {
+  float: right;
+  width: 160px;
+  height: 56px;
+  font-size: 24px;
+  color: #fff;
+  background: #DDD;
+}
+.content .empty {
+  display: none;
+  width: 100%;
+  height: 300px;
+  background: url(../../img/shopcart/cart-none-bg.png) center center no-repeat;
+}

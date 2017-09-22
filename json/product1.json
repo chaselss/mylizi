@@ -1,0 +1,71 @@
+{
+	"cms": "<strong>化妆水</strong> <span> <a href='javascript:;'>爽肤水</a> <a href='javascript:;'>紧肤水</a> <a href='javascript:;'>美容液</a> <a href='javascript:;'>精华水</a> <a href='javascript:;'>喷雾</a> </span>",
+	"status": "SUCCESS",
+	"items": [
+		{
+			"itemNum": "2021193",
+			"title": "法国Avene雅漾舒护活泉水喷雾300ml 补水保湿舒缓肌肤",
+			"price": "95",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/c3923d96258a.jpg",
+			"salesVolume": 28702,
+			"nowPrice": "95",
+			"tagUrl": ""
+		}, {
+			"itemNum": "510391034",
+			"title": "日本OPERA娥佩兰薏仁水美白爽肤水500ml 保湿补水嫩白肌肤",
+			"price": "52",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/1d450ad20af67.jpg",
+			"salesVolume": 15565,
+			"nowPrice": "52",
+			"tagUrl": ""
+		}, {
+			"itemNum": "16518",
+			"title": "日本城野医生labolabo黑头角栓毛孔对策化妆水200ml",
+			"price": "215",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/c3923d551fbf.jpg",
+			"salesVolume": 110,
+			"nowPrice": "215",
+			"tagUrl": ""
+		}, {
+			"itemNum": "15920",
+			"title": "韩国AHC B5透明质酸玻尿酸爽肤水100ml 补水镇定",
+			"price": "89",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/1d4710df04676.jpg",
+			"salesVolume": 472,
+			"nowPrice": "89",
+			"tagUrl": ""
+		}, {
+			"itemNum": "71007101",
+			"title": "美国Kiehl's 科颜氏/契尔氏小黄瓜化妆水250ml 补水收毛孔",
+			"price": "199",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/c35444b54043.jpg",
+			"salesVolume": 1990,
+			"nowPrice": "199",
+			"tagUrl": ""
+		}, {
+			"itemNum": "494489464",
+			"title": "日本Esthe Dew伊诗露药用美容院级胎盘素美白化妆水500ml 保湿美白",
+			"price": "58",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/11e6a8c43505a.jpg",
+			"salesVolume": 5612,
+			"nowPrice": "58",
+			"tagUrl": ""
+		}, {
+			"itemNum": "535363544",
+			"title": "日本Albion奥尔滨精华液健康水110ml 补水保湿紧致",
+			"price": "235",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/2e543345055cf.jpg",
+			"salesVolume": 807,
+			"nowPrice": "235",
+			"tagUrl": ""
+		}, {
+			"itemNum": "53175333",
+			"title": "法国LANCOME兰蔻玫瑰露清滢柔肤化妆水/粉水400ml 补水保湿",
+			"price": "319",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/28a545d27d055.jpg",
+			"salesVolume": 1117,
+			"nowPrice": "319",
+			"tagUrl": ""
+		}
+	]
+}

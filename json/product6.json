@@ -1,0 +1,71 @@
+{
+	"cms": "<div class=\"series_title\">\r\n<strong><a href=\"http://www.lizi.com/itemSearch/search?content=%E5%8F%A3%E7%BA%A2+%E5%94%87%E5%BD%A9\" target=\"_blank\">唇妆<\u002fa><\u002fstrong>\r\n<span>\r\n    <a href=\"http://www.lizi.com/itemSearch/search?isPromotion=&sort=&order=&function=&price=&brand=&content=&category=554dad6ae4b0a4e489d1af1c\" target=\"_blank\">口红<\u002fa>\r\n    <a href=\"http://www.lizi.com/itemSearch/search?isPromotion=&sort=&order=&function=&price=&brand=&content=&category=554dad6be4b0a4e489d1af37\" target=\"_blank\">唇彩<\u002fa>\r\n    <a href=\"http://www.lizi.com/itemSearch/search?content=%E5%94%87%E8%86%8F\" target=\"_blank\">唇膏<\u002fa>\r\n    <a href=\"http://www.lizi.com/itemSearch/search?content=%E5%94%87%E9%87%89\" target=\"_blank\">唇釉<\u002fa>\r\n<\u002fspan>\r\n<\u002fdiv>\r\n\r\n<!--\r\n<div class=\"series_pics\">\r\n  <div class=\"l\">\r\n    <a href=\"http://www.lizi.com/product-10641.html\" target=\"_blank\"><img src=\"http://s02.lizi.com/images/index20151027/cz1.jpg\"><\u002fa>\r\n  <\u002fdiv>\r\n  <div class=\"m\">\r\n    <a href=\"http://www.lizi.com/product-12682.html\" target=\"_blank\"><img src=\"http://s02.lizi.com/images/index20151027/cz2.jpg\"><\u002fa>\r\n  <\u002fdiv>\r\n  <div class=\"r\">\r\n    <a href=\"http://www.lizi.com/product-11233.html\" target=\"_blank\"><img src=\"http://s02.lizi.com/images/index20151027/cz3.jpg\"><\u002fa>\r\n  <\u002fdiv>\r\n<\u002fdiv>\r\n-->",
+	"status": "SUCCESS",
+	"items": [
+		{
+			"itemNum": "513721375",
+			"title": "美国MAC魅可时尚唇膏口红3g 显色持久不脱色",
+			"price": "155",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/22f5302a1a28f.jpg",
+			"salesVolume": 3571,
+			"nowPrice": "155",
+			"tagUrl": ""
+		}, {
+			"itemNum": "14835",
+			"title": "韩国BBIA亚光丝绒口红last lipstick持久显色唇膏红管/绿管3.2g",
+			"price": "52",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/33fdac0c0126c.jpg",
+			"salesVolume": 1163,
+			"nowPrice": "52",
+			"tagUrl": ""
+		}, {
+			"itemNum": "15549",
+			"title": "美国Revlon露华浓丽采炫亮唇膏口红持久多色 维密模特御用~",
+			"price": "59",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/1d42d761836da.jpg",
+			"salesVolume": 851,
+			"nowPrice": "59",
+			"tagUrl": ""
+		}, {
+			"itemNum": "14239",
+			"title": "韩国innisfree悦诗风吟real fit丝绒哑光雾面唇膏口红 3.5g",
+			"price": "79.99",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/289d3793bd6c8.png",
+			"salesVolume": 219,
+			"nowPrice": "79.99",
+			"tagUrl": ""
+		}, {
+			"itemNum": "15123",
+			"title": "韩国the saem得鲜按钮式口红持久咬唇哑光 豆沙色秀智色 2g",
+			"price": "49",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/c389c761fabe.jpg",
+			"salesVolume": 2819,
+			"nowPrice": "49",
+			"tagUrl": ""
+		}, {
+			"itemNum": "509520947",
+			"title": "Beauty Rule美丽法则恒彩水润唇膏口红笔",
+			"price": "28",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/28a52f4eb6bd0.jpg",
+			"salesVolume": 6288,
+			"nowPrice": "28",
+			"tagUrl": ""
+		}, {
+			"itemNum": "17822",
+			"title": "意大利Kiko方管4系丰盈滋养口红唇膏3g",
+			"price": "55",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/2e548da845c42.jpg",
+			"salesVolume": 70,
+			"nowPrice": "55",
+			"tagUrl": ""
+		}, {
+			"itemNum": "15123",
+			"title": "韩国the saem得鲜按钮式口红持久咬唇哑光 豆沙色秀智色 2g",
+			"price": "49",
+			"picUrl": "http://img.lizi.com/lizi/store/554b07acf31ef04978652554/c389c761fabe.jpg",
+			"salesVolume": 2819,
+			"nowPrice": "49",
+			"tagUrl": ""
+		}
+	]
+}
