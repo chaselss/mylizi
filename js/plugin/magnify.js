@@ -28,7 +28,7 @@
 				}
 				//给工具设置位置
 				$("#tools").css({left:offsetPos.x,top:offsetPos.y,display:"block"});
-				magnifybox.css({"background-position-x":-offsetPos.x*scale.x,"background-position-y":-offsetPos.y*scale.y});
+				magnifybox.children().css({left:-offsetPos.x*scale.x,top:-offsetPos.y*scale.y});
 			});
 			//鼠标划出工具消失
 			imgbox.on("mouseout",function () {

@@ -173,12 +173,18 @@ $fcolor:#34495E;
                #maginfy{
                    display: none;
                    position: absolute;
-                   left: 420px;
+                   left: 410px;
                    top: -20px;
-                   border: 1px solid #AAAAAA;
-                   width: 410px;
-                   height: 486px;
-                   background: url(../../img/details/1p.jpg) no-repeat;
+                   border: 1px solid #ccc;
+                   width: 400px;
+                   height: 406px;
+                   overflow: hidden;
+                   box-shadow: 0 0 2px 2px #ccc;
+                   img{
+                       width: 600px;
+                       height: 600px;
+                       position: absolute;
+                   }
                }
            }
            .pics{
@@ -783,5 +789,81 @@ $fcolor:#34495E;
         input{
             vertical-align: middle;
         }
+    }
+}
+.coverbox{
+    width: 374px;
+    height: 193px;
+    border:1px solid #ccc;
+    box-shadow:0 0 5px 1px #ccc;
+    border-radius: 5px;
+    position: fixed;
+    top: 230px;
+    left: 450px;
+    background: #fff;
+    display: none;
+    .remove{
+       float: right; 
+       margin-right: 15px;
+       margin-top: 3px;
+       width: 23px;
+       height: 30px;
+       font-size: 30px;
+       line-height: 30px;
+       color: #CCCCCC;
+    }
+    .box{
+        clear: both;
+        width: 274px;
+        height: 122px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        .cov_title{
+            width: 274px;
+            height: 60px;
+            margin-bottom: 20px;
+            i{
+                display: inline-block;
+                width: 40px;
+                height: 45px;
+                margin-right: 15px;
+                color: lightgreen;
+                font-size: 40px;
+                vertical-align: middle;
+            }
+            span{
+                vertical-align: middle;
+                font-size: 20px;
+            }
+        }
+        .cov_content{
+            width: 274px;
+            height: 42px;
+            .continue{
+                width: 76px;
+                height: 20px;
+                
+            }
+            span{
+                margin-right: 60px;
+                a{
+                    color: cornflowerblue;
+                }
+            }
+            .calcul{
+                width: 96px;
+                height: 30px;
+                padding: 5px 20px;
+                border: 1px solid $color;
+                background: $color;
+                border-radius: 3px;
+                display: inline-block;
+                text-align: center;
+                line-height: 30px;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+        
     }
 }

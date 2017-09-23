@@ -9,8 +9,8 @@ require(["../config"], function() {
 				//检查cookie是否有登录信息
 				var data = JSON.parse(cookie.get("user"));
 				if(!!data) {
-					if (!!data.flag) {
-						
+					if(!!data.flag) {
+
 						$(".login").attr("href", "").html(data.userID);
 						$(".register").attr("href", "login.html").html("注销");
 					}
@@ -37,6 +37,7 @@ require(["../config"], function() {
 					}
 
 				})
+
 				//划过关注我们
 				$(".more_menu").hover(function(e) {
 					if(e.target == this) {
@@ -50,14 +51,11 @@ require(["../config"], function() {
 						opacity: "0"
 					}, 10);
 				});
-		
+
 			});
 
-				//$("#footbox").load("common/foot.html");
+			$("#footbox").load("common/foot.html");
 
-			
-		
-			
 			//导航
 			//swiper
 			getsearch_jsonp();
@@ -90,40 +88,49 @@ require(["../config"], function() {
 			setcountTime($(".c4 span"), "2018/11/3 21:55:57"); //设置倒计时时间
 			setblink(); //鼠标划过效果*/
 			//recommend
-			
+
 			var floor = $(".floor")
-			$(".recommend li").on("click",function () {
-				cookie.set("searchId",this.itemNum);
+			$(".recommend li").on("click", function() {
+				cookie.set("searchId", this.itemNum);
+				var data = {
+					src: $(this).find("img").attr("src"),
+					name: $(this).find(".pname").html()
+				}
+				console.log(data);
+				cookie.set("product_mess", JSON.stringify(data));
+				console.log(document.cookie);
 			});
-			floor.each(function (index) {
+			floor.each(function(index) {
 				$.ajax({
-					type:"post",
-					url:"/api/common/ajax_findFloor",
-					data:{uniqueMark:"floor_0"+(index+2)},
-					success:function (data) {
+					type: "post",
+					url: "/api/common/ajax_findFloor",
+					data: {
+						uniqueMark: "floor_0" + (index + 2)
+					},
+					success: function(data) {
 						var item = data.items;
 						var $li = $(this).children("ul").children("li");
 						$(this).children(":first").html(data.cms);
 						$li.each(function(i) {
 							$(this).flag = item[i].itemNum;
-							var src = item[i].picUrl+"!wh250";
-							
-							var a = "/simg"+src.split("http://img.lizi.com")[1];
-							console.log("http://localhost:8000"+a);
+							var src = item[i].picUrl + "!wh250";
+
+							var a = "/simg" + src.split("http://img.lizi.com")[1];
+							console.log("http://localhost:8000" + a);
 							this.itemNum = item[i].itemNum;
-							$(this).children().children(".imgbox").html($("<img src='"+"http://localhost:8000"+a+"'>"));
+							$(this).children().children(".imgbox").html($("<img src='" + "http://localhost:8000" + a + "'>"));
 							//$(this).children().children(".imgbox").children("img").attr("src",a);
-							
+
 							$(this).children().children(".pname").html(item[i].title);
 							$(this).children().children(".btmbox").children(".price").html(item[i].price);
 							$(this).children().children(".btmbox").children(".salebox").children(".sale").html(item[i].salesVolume);
 						});
 
 					}.bind(this),
-					dataType:"json"
-				
+					dataType: "json"
+
 				});
-				
+
 			})
 			//getProductData($(".floor1:first"), "../json/product2.json", seteledate); //给页面添加信息
 			//getProductData($(".floor2:first"), "../json/product2.json", seteledate); //给页面添加信息
@@ -158,7 +165,7 @@ require(["../config"], function() {
 			})
 
 		})
-		
+
 		function floorclick() {
 			var ul = $("#scrollFloor");
 			ul.children(":not(:last)").on("click", function() { //定位到各自的楼层
@@ -301,7 +308,7 @@ require(["../config"], function() {
 		}
 
 		function getProductData($ele, url, loaddate, success) {
-			
+
 			var a = new XMLHttpRequest();
 			a.open("get", url, "true");
 			a.onload = function() {
@@ -309,8 +316,6 @@ require(["../config"], function() {
 			};
 			a.send();
 		}
-
-		
 
 		function setcountTime($timegroup, endtime) {
 			var timeoption = {
@@ -400,6 +405,7 @@ require(["../config"], function() {
 		function getsearch_jsonp() {
 			var $search = $(".top_center #search");
 			var $result = $(".top_center .result:first");
+			console.log("haha");
 
 			function success(data) {
 				var html = tempengine(temp.text, data.s);
@@ -417,13 +423,28 @@ require(["../config"], function() {
 					$result.get(0).innerHTML = "";
 					return;
 				}
-				$.ajax({
-					type:"get",
-					url:"http://suggestion.baidu.com?wd=" + $search.val(),
+				/*$.ajax({
+					type:"jsonp",
+					url:"http://suggestion.baidu.com?wd="+ $search.val(),
 					async:true,
 					success:success
+				});*/
+
+				$.ajax({
+					url: 'http://suggestion.baidu.com',
+					dataType: 'jsonp',
+					jsonp: 'cb',
+					data: {
+						wd: $search.val()
+					},
+					success: function(result) {
+						success(result);
+					},
+					error: function(err) {
+						alert(err)
+					}
 				});
-				
+
 			});
 		}
 	})

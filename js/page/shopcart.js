@@ -1,7 +1,7 @@
 require(["../config"], function() {
-	
-	require(["jquery", "cookie","tempengine","comment_tem","magnify","pager"], function($,cookie,tempengine,comment_tem) {
-		
+	var cook;
+	require(["jquery", "cookie","tempengine","shopcar_temp","magnify","pager"], function($,cookie,tempengine,shopcar_temp) {
+		cook=cookie;
 		/*头部信息*/
 		$("#headbox").load("common/headFoot.html",function () {
 				var searcheinp = $("#search");
@@ -52,8 +52,10 @@ require(["../config"], function() {
 						opacity: "0"
 					}, 10);
 				});
+				
 		});
-		
+
+		setshop_data();
 		/*tab_line滑动效果*/
 		slide_tab_line()
 		
@@ -63,11 +65,18 @@ require(["../config"], function() {
 		quick_change_count()		//快速修改商品数量
 		
 		/*删除按钮实现*/
-		
 		deletemsg()
+		
 		/*尾部信息*/
 		$("#footbox").load("common/foot.html");
-	
+		
+		function setshop_data () {
+			var data = JSON.parse(cookie.get("shopcart"));
+			
+			var html = tempengine(shopcar_temp,data);	
+			$(".shop_list").html(html);
+			console.log(html);
+		}
 	});
 	function slide_tab_line () {
 
@@ -139,6 +148,7 @@ require(["../config"], function() {
 				var parent = $(ele[s]).parents(".shop1").get(0);
 					sum += parseInt(parent.sum);
 					$("button").addClass("pay");
+					$(".duoshou").html(sum);
 			}
 		}
 	}
@@ -194,6 +204,15 @@ require(["../config"], function() {
 	function deletemsg () {
 		$(".delete").on("click",function () {			//单次删除
 			$(this).parents(".shop1").remove();
+			var sid = $(this).parents(".shop1").attr("id");
+			var data = JSON.parse(cook.get("shopcart"));
+			var newdata = [];
+			for (var i=0;i<data.length;i++) {
+				if (sid!=data[i].newid) {
+					newdata.push(data[i]);
+				}
+			}
+			cook.set("shopcart",JSON.stringify(newdata));
 			if (!$(".check:not('.all')").length) {
 				$(".page").hide(100);
 				$(".empty").show(100);

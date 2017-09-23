@@ -11,7 +11,8 @@ require.config({
 		"cookie" : "../plugin/cookie",
 		"magnify" : "../plugin/magnify",
 		"comment_tem" :　"../template/comme_temp",
-		"pager": "../plugin/pager"
+		"pager": "../plugin/pager",
+		"shopcar_temp":"../template/shopcar_temp"
 	},
 	shim:{
 		"ajax":{
